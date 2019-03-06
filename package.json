@@ -1,0 +1,23 @@
+{
+  "name": "production-lifecycle-system",
+  "version": "1.0.0",
+  "description": "A system that simulates how production life cycle moves from one state to the other e.g Producer - Retailer - Consumer - Recycler",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dearests/production-lifecycle-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dearests/production-lifecycle-system/issues"
+  },
+  "homepage": "https://github.com/dearests/production-lifecycle-system#readme",
+  "dependencies": {
+    "jest": "^24.1.0"
+  }
+}
