@@ -1,4 +1,4 @@
-![alt text](http://www.angelfire.com/ego/mr.f/images/plc.jpg "image title")
+![alt text](http://www.angelfire.com/ego/mr.f/images/plc.jpg "image description")
 
 
 # production-lifecycle-system
