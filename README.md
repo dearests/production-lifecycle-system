@@ -6,3 +6,7 @@ A system that simulates how production life cycle moves from one state to the ot
 
 **INSTALLATION**
 *********
+
+On MacOS, Linux and Windows you can install:
+
+1) Must have node.js installed [this](https://nodejs.org/en/)
