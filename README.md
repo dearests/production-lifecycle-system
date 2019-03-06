@@ -9,4 +9,6 @@ A system that simulates how production life cycle moves from one state to the ot
 
 On MacOS, Linux and Windows you can install:
 
-1) Must have node.js installed [this](https://nodejs.org/en/)
+1) Must have node.js installed [here](https://nodejs.org/en/)
+2) change directory to working directory e.g cd ~/Desktop/workingDirectory
+3) clone the repo - <span style="color:blue">git clone https://github.com/dearests/production-lifecycle-system.git</span
