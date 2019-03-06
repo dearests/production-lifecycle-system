@@ -27,14 +27,14 @@ test('Test to get product id', () => {
 })
 
 test('the readFile was successful', () => {
-    return utility.read('../database/test-input').then(data => {
+    return utility.read('./database/test-input').then(data => {
       expect(data).toBe('hello my name\nand am from');
     });
 });
 
 test('the readFile fails with an error', () => {
     expect.assertions(1);
-    return utility.read().catch(e => expect(e).toMatch('error'));
+    return utility.read('../database/Product-Input').catch(e => expect(e).toMatch('error'));
 });
 
 test('method to test data cleaning', () => {
@@ -72,12 +72,12 @@ test('method to test data cleaning', () => {
 })
 
 test('the readFile was successful', () => {
-    return utility.write('../database/test-output', 'hello').then(data => {
+    return utility.write('./database/test-output', 'hello').then(data => {
       expect(data).toBe('hello');
     });
 });
 
 test('the readFile fails with an error', () => {
     expect.assertions(1);
-    return utility.write('./database/test-output','hello').catch(e => expect(e).toMatch('error'));
+    return utility.write('../database/test-output','hello').catch(e => expect(e).toMatch('error'));
 });

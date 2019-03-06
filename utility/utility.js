@@ -3,6 +3,7 @@ const fs = require('fs');
 class Utility {
     constructor() {
         this.lastProductId = null;
+        this.islastProduct = false;
     }
 
     //method to set to assign id to the lastProductId member property
@@ -21,7 +22,7 @@ class Utility {
     }
 
     //method to read data from file 
-    read(path = './database/Product-Input', option='utf8') {
+    read(path, option='utf8') {
         return new Promise((resolve, reject) => {
             fs.readFile(path, option, (error, data) => {
                 if (error) reject('error');
@@ -58,12 +59,20 @@ class Utility {
     //method to write to file
     write(path, dataToFile) {
         return new Promise((resolve, reject) => {
-            fs.appendFile(path, dataToFile, error => {
-                if (error) {
-                    reject('error');
-                }
-                resolve('hello');
-            })
+            // fs.appendFile(path, dataToFile, error => {
+            //     if (error) {
+            //         reject('error',);
+            //     }
+            //     resolve('hello');
+            // })
+            try {
+                fs.appendFileSync(path, dataToFile)
+            } catch(e) {
+                reject('error');
+            }
+            
+            resolve('hello');
+         
         })
     }
 }
