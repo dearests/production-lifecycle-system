@@ -1,10 +1,5 @@
-// const fs = require('fs');
 const utility = require('./utility');
 
-// const myMockFn = jest
-//   .fn()
-//   .mockImplementation((file, option, cb) => cb(null, mockContent))
-//   .mockImplementation((file, option, cb) => cb('Some Error', null))
 
 test('Test to set product id without passing the parameter id', () => {
     expect(utility.setLastProductId()).toEqual('Please set Id before requiring');
@@ -27,8 +22,8 @@ test('Test to get product id', () => {
 })
 
 test('the readFile was successful', () => {
-    return utility.read('./database/test-input').then(data => {
-      expect(data).toBe('hello my name\nand am from');
+    return utility.read('./database/Product-Input').then(data => {
+      expect(data).toBeTruthy()
     });
 });
 
