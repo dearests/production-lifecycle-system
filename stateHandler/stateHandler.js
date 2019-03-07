@@ -1,4 +1,4 @@
-
+//State Handler class
 
 class StateHandler {
     constructor(data) {
@@ -7,12 +7,13 @@ class StateHandler {
         this._currentState = new allExports[data.state](this);
     }
 
+    //Method to change to the next state;
     async nextStage(stage) {
-        // if(this.count++ >= 2000) return;
         this._currentState = stage;
         await this._currentState.go(this.product, this.id);
     }
 
+    //method to start the cycle
     start() {
         this._currentState.go(this.product, this.id);
     }
@@ -20,5 +21,5 @@ class StateHandler {
 }
 
 
-const allExports = require('../exportDep.js');
+const allExports = require("../exportDep.js");
 module.exports = StateHandler;
