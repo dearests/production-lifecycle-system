@@ -13,5 +13,5 @@ On MacOS, Linux and Windows you can install:
 2) change directory to working directory e.g cd ~/Desktop/workingDirectory
 3) clone the repo - __**`git clone https://github.com/dearests/production-lifecycle-system.git`**__
 4) change directory to repo - __**`cd production-lifecycle-system`**__
-5) node install
+5) npm install
 6) node app.js to start the app.
